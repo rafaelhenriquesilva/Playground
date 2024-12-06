@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES6",               // Compila para JavaScript ES6
+    "module": "CommonJS",          // Usa o sistema de módulos CommonJS (Node.js)
+    "strict": true,                // Ativa verificações de tipo rigorosas
+    "esModuleInterop": true,       // Permite interoperabilidade entre módulos ES e CommonJS
+    "outDir": "./dist",            // Saída da compilação
+    "rootDir": "./src",            // Diretório base para os arquivos fonte
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"],              // Inclui apenas os arquivos da pasta src
+  "exclude": ["node_modules"]      // Exclui a pasta node_modules
+}
