@@ -7,7 +7,14 @@ const port = process.env.PORT || 3000;
 
 // Define a "Hello World" route
 app.get('/', (req: Request, res: Response) => {
-  res.send('Hello, World!');
+  console.info({
+    message: 'Consultando o get inicial'
+  })
+  const { name } = req.params
+  console.info({
+    message: `params name passado: ${name}`
+  })
+  res.send(`Hello ${name}!`);
 });
 
 // Start the server
