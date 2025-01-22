@@ -20,7 +20,7 @@ app.get('/', (req: Request, res: Response) => {
   console.info({
     message: `params name passado: ${req.query.name}`
   })
-  res.send(`Hello ${name}!`);
+  res.send(`Hello Linux ${name}!`);
 });
 
 // Start the server
