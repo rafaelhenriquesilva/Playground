@@ -14,7 +14,7 @@ app.use(bodyParser.json({
 // Define a "Hello World" route
 app.get('/', (req: Request, res: Response) => {
   console.info({
-    message: 'Consultando o get inicial'
+    message: `[${new Date().toISOString()}] Consultando o get inicial `
   })
   const name = req.query.name || 'default'
   console.info({
